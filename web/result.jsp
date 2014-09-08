@@ -14,7 +14,7 @@
     </head>
     <body>
         <h1> The Area of the rectangle is:</h1>
-        <h2>
+        <h2>  
             <%
                 Object obj = request.getAttribute("calculation");
                 String string = null;

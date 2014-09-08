@@ -23,7 +23,7 @@ import model.CircleCalculatorService;
 @WebServlet(name = "CircleCalculatorController", urlPatterns = {"/circleCalc"})
 public class CircleCalculatorController extends HttpServlet {
 
-    private static final String CIRCLE_RESULT = "result2.jsp";
+    private static final String CIRCLE_RESULT = "MainCalc.jsp";
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>

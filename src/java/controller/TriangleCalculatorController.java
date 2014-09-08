@@ -23,7 +23,7 @@ import model.TriangleCalculatorService;
 @WebServlet(name = "TriangleCalculatorController", urlPatterns = {"/triangleCalc"})
 public class TriangleCalculatorController extends HttpServlet {
 
-    private static final String TRIANGLE_RESULT = "result3.jsp";
+    private static final String TRIANGLE_RESULT = "MainCalc.jsp";
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>

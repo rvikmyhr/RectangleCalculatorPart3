@@ -23,7 +23,7 @@ import model.CalculatorService;
 @WebServlet(name = "CalculatorController", urlPatterns = {"/calculate"})
 public class CalculatorController extends HttpServlet {
 
-    private static final String CALCULATED_PAGE = "result.jsp";
+    private static final String CALCULATED_PAGE = "MainCalc.jsp";
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
