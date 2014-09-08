@@ -14,16 +14,16 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.CalculatorService;
+import model.TriangleCalculatorService;
 
 /**
  *
  * @author Ronnie
  */
-@WebServlet(name = "CalculatorController", urlPatterns = {"/calculate"})
-public class CalculatorController extends HttpServlet {
+@WebServlet(name = "TriangleCalculatorController", urlPatterns = {"/triangleCalc"})
+public class TriangleCalculatorController extends HttpServlet {
 
-    private static final String CALCULATED_PAGE = "result.jsp";
+    private static final String TRIANGLE_RESULT = "result3.jsp";
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,15 +38,15 @@ public class CalculatorController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
-        String length = request.getParameter("length");
-        String height = request.getParameter("height");
+        String base = request.getParameter("triBase");
+        String height = request.getParameter("triHeight");
         
-        CalculatorService cs = new CalculatorService();
-        String result = cs.calculateRectangleArea(length, height);
-        
-        request.setAttribute("calculation", result);
-        RequestDispatcher view = request.getRequestDispatcher(CALCULATED_PAGE);
+        TriangleCalculatorService tcs = new TriangleCalculatorService();
+        String result = tcs.calculateTriangleArea(base, height);
+        request.setAttribute("tricalc", result);
+        RequestDispatcher view = request.getRequestDispatcher(TRIANGLE_RESULT);
         view.forward(request, response);
+        
         
     }
 

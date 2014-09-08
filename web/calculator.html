@@ -12,7 +12,7 @@ and open the template in the editor.
     </head>
     <body>
         <div>
-            <h1> Rectangle Calculator </h1><br>
+            <h3> Rectangle Calculator </h3>
             <form id="form1" name="form1" method="POST" action="calculate">
                 
                 <p>Length: <input id="length" name="length" type="text" value="0"><br>
@@ -20,6 +20,24 @@ and open the template in the editor.
                 <input id="button" name="button" type="submit" value="Submit">
                 
             </form>
+            
+            <h3>Triangle Calculator</h3>
+            <form id="triangle" name="triangle" method="POST" action="triangleCalc">
+                
+                <p>Base: <input id="triBase" name="triBase" type="text" value=""><br>
+                <p>Height: <input id="triHeight" name="triHeight" type="text" value=""><br><br>
+                <input id="triButton" name="triButton" type="submit" value="Submit">
+                
+            </form>
+            
+            <h3>Circle Calculator</h3>
+            <form id="circle" name="circle" method="POST" action="circleCalc">
+                
+                <p>Radius: <input id="radius" name="radius" type="text" value=""><br><br>
+                    <input id="circleButton" name="circleButton" type="submit" value="Submit">
+                
+            </form>
+            
         </div>
     </body>
 </html>
